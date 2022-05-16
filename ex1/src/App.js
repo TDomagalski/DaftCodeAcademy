@@ -10,7 +10,7 @@ function App() {
 					className="Tomek-link"
 					href="https://github.com/TDomagalski/DaftCodeAcademy"
 					target="_blank"
-					rel="TomekWebDev">
+					rel="noopener noreferrer">
 					TomekWebDev GitHub
 				</a>
 			</header>
