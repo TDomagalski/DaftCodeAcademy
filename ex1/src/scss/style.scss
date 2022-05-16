@@ -55,4 +55,11 @@ button {
 	font-weight: 700;
 	padding: 10px;
 	margin-bottom: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+	border-radius: 15px;
+
+	&:hover {
+		background-color: #61dafb;
+	}
 }

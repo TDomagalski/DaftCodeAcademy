@@ -77,5 +77,13 @@ button {
   font-weight: 700;
   padding: 10px;
   margin-bottom: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #61dafb;
 }
 /*# sourceMappingURL=style.css.map */
