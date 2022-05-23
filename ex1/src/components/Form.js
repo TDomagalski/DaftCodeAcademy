@@ -52,35 +52,37 @@ const Form = () => {
 	}, [name, email]);
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<div className="field">
-				<label>Name</label>
-				<input
-					type="text"
-					value={name}
-					onInput={nameHandler}
-					onChange={(e) => {
-						setName(e.target.value);
-					}}
-				/>
-				{nameErr ? <span>Invalid User name</span> : null}
-			</div>
-			<div className="field">
-				<label>Password</label>
-				<input
-					type="password"
-					value={email}
-					onInput={emailHandler}
-					onChange={(e) => {
-						setEmail(e.target.value);
-					}}
-				/>
-				{emailErr ? <span>Invalid Email name</span> : null}
-			</div>
-			<div className="field">
-				<button type="sumbit">Submit</button>
-			</div>
-		</form>
+		<div className="container">
+			<form onSubmit={handleSubmit}>
+				<div className="field">
+					<label>Name</label>
+					<input
+						type="text"
+						value={name}
+						onInput={nameHandler}
+						onChange={(e) => {
+							setName(e.target.value);
+						}}
+					/>
+					{nameErr ? <span>Invalid User name</span> : null}
+				</div>
+				<div className="field">
+					<label>Email</label>
+					<input
+						type="email"
+						value={email}
+						onInput={emailHandler}
+						onChange={(e) => {
+							setEmail(e.target.value);
+						}}
+					/>
+					{emailErr ? <span>Invalid Email name</span> : null}
+				</div>
+				<div className="btnSubmit">
+					<button type="sumbit">Submit</button>
+				</div>
+			</form>
+		</div>
 	);
 };
 

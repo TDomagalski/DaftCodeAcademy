@@ -35,16 +35,20 @@
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 
+		.field {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-grow: 1;
+		}
+
 		input {
 			font-size: 24px;
 			text-align: center;
 			padding: 5px;
 			letter-spacing: 5px;
 			border-radius: 10px;
-
-			&:last-of-type {
-				margin-top: 50px;
-			}
 		}
 
 		span {
