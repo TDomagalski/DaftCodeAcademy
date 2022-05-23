@@ -1,0 +1,74 @@
+// ~~~~ FROM DEFAULT App.css ~~~~
+
+.App {
+	text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+// ~~~~~~ GLOBAL CSS ~~~~~~
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	height: 75vh;
+	background-color: #a7a7a7;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: stretch;
+	align-items: center;
+	border-radius: 10px;
+
+	form {
+		width: 80%;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+
+		input {
+			font-size: 24px;
+			text-align: center;
+			padding: 5px;
+			letter-spacing: 5px;
+			border-radius: 10px;
+
+			&:last-of-type {
+				margin-top: 50px;
+			}
+		}
+
+		span {
+			font-size: 18px;
+			color: brown;
+		}
+
+		.btnSubmit {
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+
+			button {
+				width: 100%;
+				padding: 15px;
+				font-size: 24px;
+				font-weight: 700;
+				letter-spacing: 5px;
+				background-color: green;
+				cursor: pointer;
+				border-radius: 10px;
+			}
+		}
+	}
+}
