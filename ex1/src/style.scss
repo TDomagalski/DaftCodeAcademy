@@ -105,11 +105,9 @@ nav {
 			margin: 0;
 			padding: 0;
 			height: 0;
-			transition: 0.5s;
 
 			&.open {
-				height: 100%;
-				transition: 0.5s;
+				height: 50%;
 			}
 
 			li {
@@ -125,7 +123,7 @@ nav {
 // ~~!!~~ MEDIA QUERIES ~~!!~~
 @media (min-width: 920px) {
 	.container {
-		width: 1200px;
+		width: 920px;
 		max-width: 1800px;
 		margin: auto;
 		height: 100%;
@@ -134,6 +132,60 @@ nav {
 		flex-wrap: nowrap;
 		justify-content: stretch;
 		align-items: center;
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+			padding: 15px;
+
+			.navbar-top {
+				font-size: 60px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 15px;
+
+				button {
+					display: none;
+				}
+			}
+
+			.navbar-bottom {
+				flex-grow: 1;
+				ul {
+					margin: 0;
+					padding: 0;
+					height: 100%;
+					display: flex;
+					align-items: stretch;
+
+					li {
+						margin-bottom: 0;
+						flex-grow: 1;
+						width: 100%;
+						padding: 20px;
+						border-right: 2px solid black;
+
+						&:last-of-type {
+							border-right: none;
+						}
+
+						a {
+							height: 100%;
+							flex-basis: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							span {
+								font-size: 25px;
+							}
+						}
+					}
+				}
+			}
+		}
 
 		form {
 			width: 50%;

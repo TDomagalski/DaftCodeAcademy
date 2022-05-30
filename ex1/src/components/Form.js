@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Form = () => {
+export const Form = () => {
 	const [name, setName] = useState("");
 	const [nameErr, setNameErr] = useState(false);
 	const [email, setEmail] = useState("");

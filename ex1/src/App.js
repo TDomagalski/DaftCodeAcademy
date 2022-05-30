@@ -1,16 +1,26 @@
 import "./style.css";
-import Form from "./components/Form";
 import Navigation from "./components/Navigation";
-import { BrowserRouter, BrowserRouter as Router, Link } from "react-router-dom";
+import Form from "./components/Form";
+import { BrowserRouter as Router } from "react-router-dom";
+
+// const Home = () => {
+// 	console.log("renderuje");
+// 	return <h1>Strona startowa</h1>;
+// };
+// const FormPage = () => {};
+// const Policy = () => {};
+// const Contact = () => {};
 
 function App() {
 	return (
-		<BrowserRouter>
+		<Router>
 			<div className="App">
 				<Navigation />
-				<Form />
+				<section>
+					<Form />
+				</section>
 			</div>
-		</BrowserRouter>
+		</Router>
 	);
 }
 
