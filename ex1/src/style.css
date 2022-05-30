@@ -13,10 +13,22 @@ body {
   height: 100vh;
 }
 
+a.links {
+  font-size: 60px;
+}
+
+p.text {
+  font-size: 22px;
+  text-align: justify;
+}
+
 .container {
   width: 100%;
-  height: 100%;
   max-width: 1800px;
+  height: 100%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +143,6 @@ nav .navbar-top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px;
 }
 
 nav .navbar-top button {
@@ -146,10 +157,7 @@ nav .navbar-bottom ul {
   margin: 0;
   padding: 0;
   height: 0;
-}
-
-nav .navbar-bottom ul.open {
-  height: 50%;
+  display: none;
 }
 
 nav .navbar-bottom ul li {
@@ -158,6 +166,11 @@ nav .navbar-bottom ul li {
 
 nav .navbar-bottom ul li a {
   text-decoration: none;
+}
+
+nav .navbar-bottom ul.open {
+  height: 50%;
+  display: block;
 }
 
 @media (min-width: 920px) {

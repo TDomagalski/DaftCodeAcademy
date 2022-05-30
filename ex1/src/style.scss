@@ -16,10 +16,21 @@ body {
 	height: 100vh;
 }
 
+a.links {
+	font-size: 60px;
+}
+
+p.text {
+	font-size: 22px;
+	text-align: justify;
+}
+
 .container {
 	width: 100%;
-	height: 100%;
 	max-width: 1800px;
+	height: 100%;
+	padding: 15px;
+	box-sizing: border-box;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -90,7 +101,6 @@ nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 15px;
 
 		button {
 			border: none;
@@ -105,16 +115,18 @@ nav {
 			margin: 0;
 			padding: 0;
 			height: 0;
-
-			&.open {
-				height: 50%;
-			}
+			display: none;
 
 			li {
 				margin-bottom: 20px;
 				a {
 					text-decoration: none;
 				}
+			}
+
+			&.open {
+				height: 50%;
+				display: block;
 			}
 		}
 	}
