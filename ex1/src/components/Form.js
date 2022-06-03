@@ -6,7 +6,7 @@ export const Form = () => {
 	const [email, setEmail] = useState("");
 	const [emailErr, setEmailErr] = useState(false);
 
-	const win = window.localStorage;
+	// const win = window.localStorage;
 
 	function nameHandler(e) {
 		let itemName = e.target.value;
@@ -32,23 +32,23 @@ export const Form = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		win.clear();
+		window.localStorage.clear();
 		setName("");
 		setEmail("");
 	};
 
 	useEffect(() => {
-		if (win.getItem("name")) {
-			setName(win.getItem("name"));
+		if (window.localStorage.getItem("name")) {
+			setName(window.localStorage.getItem("name"));
 		}
-		if (win.getItem("email")) {
-			setEmail(win.getItem("email"));
+		if (window.localStorage.getItem("email")) {
+			setEmail(window.localStorage.getItem("email"));
 		}
 	}, []);
 
 	useEffect(() => {
-		win.setItem("name", name);
-		win.setItem("email", email);
+		window.localStorage.setItem("name", name);
+		window.localStorage.setItem("email", email);
 	}, [name, email]);
 
 	return (
