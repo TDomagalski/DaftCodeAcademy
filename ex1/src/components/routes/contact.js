@@ -6,7 +6,8 @@ export const Contact = () => {
 			<a
 				className="links"
 				href="https://github.com/TDomagalski/DaftCodeAcademy"
-				target="_blank">
+				target="_blank"
+				rel="noopener noreferrer">
 				Github
 			</a>
 		</div>
