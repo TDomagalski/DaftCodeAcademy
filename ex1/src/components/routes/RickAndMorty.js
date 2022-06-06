@@ -1,7 +1,7 @@
-export const Policy = () => {
+export const RickAndMorty = () => {
 	return (
 		<div className="container">
-			<h1>Policy</h1>
+			<h1>RickAndMorty</h1>
 			<p className="text">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero
 				pariatur reprehenderit voluptas enim reiciendis praesentium natus.
@@ -12,4 +12,4 @@ export const Policy = () => {
 	);
 };
 
-export default Policy;
+export default RickAndMorty;
