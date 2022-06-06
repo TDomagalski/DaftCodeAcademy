@@ -6,8 +6,6 @@ export const Form = () => {
 	const [email, setEmail] = useState("");
 	const [emailErr, setEmailErr] = useState(false);
 
-	// const win = window.localStorage;
-
 	function nameHandler(e) {
 		let itemName = e.target.value;
 

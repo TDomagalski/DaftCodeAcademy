@@ -35,8 +35,8 @@ export const Navigation = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="policy">
-								<span>Policy</span>
+							<Link to="RickAndMorty">
+								<span>RickAndMorty</span>
 							</Link>
 						</li>
 						<li>
