@@ -132,6 +132,25 @@ nav {
 	}
 }
 
+.RickAndMortyContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.RickAndMortyCharacter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-basis: 100%;
+		margin-bottom: 30px;
+
+		h2 {
+			margin-top: 0;
+		}
+	}
+}
+
 // ~~!!~~ MEDIA QUERIES ~~!!~~
 @media (min-width: 920px) {
 	.container {
@@ -202,6 +221,17 @@ nav {
 		form {
 			width: 50%;
 			border-radius: 10px;
+		}
+
+		.RickAndMortyContainer {
+			justify-content: space-between;
+
+			.RickAndMortyCharacter {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				flex-basis: 25%;
+			}
 		}
 	}
 }

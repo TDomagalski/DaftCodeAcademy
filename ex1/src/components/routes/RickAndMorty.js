@@ -1,13 +1,36 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
 export const RickAndMorty = () => {
+	const [characters, setCharacters] = useState([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const { data } = await axios.get(
+					"https://rickandmortyapi.com/api/character/"
+				);
+
+				setCharacters(data.results);
+			} catch (error) {
+				console.error(error);
+			}
+		};
+
+		fetchData();
+	}, []);
+
 	return (
-		<div className="container">
+		<div>
 			<h1>RickAndMorty</h1>
-			<p className="text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vero
-				pariatur reprehenderit voluptas enim reiciendis praesentium natus.
-				Nesciunt aut iure provident, laudantium consequatur tempore quos et odit
-				molestias atque dicta!
-			</p>
+			<div className="RickAndMortyContainer">
+				{characters.map((character) => (
+					<div className="RickAndMortyCharacter" key={character.id}>
+						<img src={character.image} alt={character.name} />
+						<h2>{character.name}</h2>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };
