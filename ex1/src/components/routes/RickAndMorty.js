@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 
+// Make changes because dont make a pull request
+
 export const RickAndMorty = () => {
 	const [characters, setCharacters] = useState([]);
 
